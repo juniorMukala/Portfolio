@@ -1,0 +1,100 @@
+  
+     @media(max-width:1250px){
+         h1{
+             font-size:1.8rem ;
+         }
+         .nav{
+            padding-right: 2%;
+              .nav__link{
+                display: inline;
+                margin: 20px;
+                &.nav__link--active{
+                   font-family: $font-stack;
+                   a{
+                       font-size: 16px;
+                       color:$text-color;
+                       text-decoration: none;
+                   }
+                   a:hover {
+                        color: yellow;
+                       }
+                   }
+               } 
+           } 
+     }
+  
+ 
+     @media (max-width:1024px){
+ 
+         .apercuProjet{
+            /*  height: 80vh; */
+         }
+         h1{
+             font-size: 0.6rem;
+             transform: translateY(300px);
+         }
+         .nav{
+             padding-right: 15px;
+               .nav__link{
+                 display: inline;
+                 padding-left: 20px;
+                 line-height: 50px;
+                 font-family: $font-stack;
+                 a{
+                     font-size: 10px;
+                     color:$text-color;
+                     text-decoration: none;
+                 }
+ 
+            }
+        }
+        .identite{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+           
+            .identite__nom {
+                &.identite__nom--style{
+                    color:$text-color;
+                    font-size: 1rem;
+                    font-family:$font-stack;
+                    span{
+                        color: yellow;
+                    }
+                }
+            }  
+              .identite__messageAccueil{
+                  &.identite__messageAccueil--style{
+                    color:$text-color;
+                    font-size: 1rem;
+                    font-family:$font-stack;
+                    animation: blink 0.5s step-end infinite;
+                    border-right: 0.15em solid yellow;
+                }
+            }
+               .monProfil{
+                   margin-top: 30px;
+                   button{
+                       padding: 15px;
+                       border-radius: 8px;
+                       font-size: 16px;
+                       &:hover{
+                           border: none;
+                           background-color: yellow;
+                        }
+                    }
+                }
+            }
+           .photoProfil{
+               height: 100vh;
+               width: 35%;
+                img{
+                width: 100%;
+                height: 100%;    
+                object-fit: cover;
+                margin-top: 50px
+                }
+            }
+     
+     }

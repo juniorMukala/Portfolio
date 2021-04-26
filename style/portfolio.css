@@ -1,0 +1,446 @@
+.header {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+.header.header--primary {
+  background: #001529;
+}
+.header .headerLogo {
+  font-size: 80px;
+  color: #fff;
+  padding-left: 50px;
+  line-height: 70px;
+}
+.header .nav {
+  padding-right: 50px;
+}
+.header .nav .nav__link {
+  display: inline;
+  margin: 50px;
+  /*   padding-left: 50px; */
+  /*  line-height: 50px; */
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.header .nav .nav__link a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.header .nav .nav__link a:hover {
+  color: yellow;
+}
+
+.apercuProjet {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.apercuProjet.apercuProjet--mint {
+  background: #002548;
+  /* 
+   .animationContenair{
+       position: absolute;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       z-index: 1;
+       .burst{
+           position: absolute;
+           .line{
+           background-color: #fff;
+           position: absolute;
+           width: 5px;
+           height: 10px;
+           border-radius: 50%;
+
+           :nth-child(1){
+              animation: move01 15s linear infinite;
+            } 
+         }
+      } */
+}
+.apercuProjet.apercuProjet--mint .maPresentation {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.apercuProjet.apercuProjet--mint .title {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  animation: blink 0.5s step-end infinite;
+  border-right: 0.15em solid yellow;
+  /*  letter-spacing: 0.02em; */
+}
+
+.skills {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.skills.skills--mint {
+  background: #002548;
+  padding-bottom: 50px;
+}
+.skills h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  padding: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.skills .skillsContenair {
+  transform: translateX(50%);
+  width: 50%;
+}
+.skills .skillsContenair .firstSkills {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.skills .skillsContenair .firstSkills > :nth-child(1) {
+  animation-name: monAnim;
+  animation-duration: 100ms;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+.skills .skillsContenair .firstSkills > :nth-child(2) {
+  animation-name: monAnim;
+  animation-duration: 3000ms;
+  animation-delay: 2000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+.skills .skillsContenair .firstSkills > :nth-child(3) {
+  animation-name: monAnim;
+  animation-duration: 3000ms;
+  animation-delay: 3500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+.skills .skillsContenair .firstSkills .multiskills {
+  height: 220px;
+  width: 200px;
+}
+.skills .skillsContenair .firstSkills .multiskills.multiskills--mint {
+  background: #fff;
+  border-radius: 5px;
+}
+.skills .skillsContenair .firstSkills .multiskills.multiskills--mint img {
+  padding-top: 5px;
+  width: 70px;
+  height: 70px;
+}
+.skills .skillsContenair .firstSkills .multiskills.multiskills--mint .skillsTitle {
+  color: #002548;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  text-align: left;
+  margin: 10px;
+}
+.skills .skillsContenair .firstSkills .multiskills.multiskills--mint p {
+  color: grey;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.skills .secondSkills {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.skills .secondSkills > :nth-child(1) {
+  animation-name: monAnim;
+  animation-duration: 3000ms;
+  animation-delay: 5000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+.skills .secondSkills > :nth-child(2) {
+  animation-name: monAnim;
+  animation-duration: 3000ms;
+  animation-delay: 65000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+.skills .secondSkills > :nth-child(3) {
+  animation-name: monAnim;
+  animation-duration: 3000ms;
+  animation-delay: 8500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+.skills .secondSkills .multiskills {
+  height: 220px;
+  width: 200px;
+}
+.skills .secondSkills .multiskills.multiskills--mint {
+  background: #fff;
+  border-radius: 5px;
+}
+.skills .secondSkills .multiskills.multiskills--mint img {
+  padding-top: 5px;
+  width: 70px;
+  height: 70px;
+}
+.skills .secondSkills .multiskills.multiskills--mint .skillsTitle {
+  color: #002548;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  text-align: left;
+  margin: 10px;
+}
+.skills .secondSkills .multiskills.multiskills--mint p {
+  color: grey;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+/* .formulaire{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001529;
+    .formulaireContenair{
+       @include tocenter;
+        h2{
+          @include title2($text-color);
+        }
+        .formulaireContact{
+            .contactInput--mint{
+                height: 50px;
+                width: 500px;
+                border-radius: 10px;  
+              }    
+          }        
+       }
+       .btnSubmit{
+           .btn--mint{
+               height: 50px;
+               width: 100px;
+               margin-left: 37%;
+               border-radius: 10px;
+               margin-top: 50px;
+               margin-bottom: 50px;
+       }
+   } */
+.Apropo {
+  background-color: #002548;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Apropo h2 {
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  padding: 50px;
+}
+.Apropo .monProfil {
+  display: flex;
+  margin-left: 50px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  padding: 50px;
+}
+.Apropo .monProfil img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: yellow;
+  }
+}
+/* @keyframes move01 {
+    0%{
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    50%{
+        transform: translate(0, -50px);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translate(0, -100px);
+        opacity: 0;
+    }
+
+}
+
+.burst .line:nth-child(2){
+    animation: move02 15s linear infinite;
+}
+@keyframes move02 {
+    0%{
+        transform:  rotate(45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(45deg) translate(0, -50px);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(45deg) translate(0, -100px);
+        opacity: 0;
+    }
+}
+.burst .line:nth-child(3){
+    animation: move03 15s linear infinite;
+    }
+@keyframes move03 {
+    0%{
+        transform:  rotate(90deg) translate(0, 0);
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(90deg) translate(0, -50px);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(90deg) translate(0, -100px);
+        opacity: 0;
+    }
+
+}
+
+.burst .line:nth-child(4){
+    animation: move04 15s linear infinite;
+    }
+@keyframes move04 {
+    0%{
+        transform:  rotate(135deg) translate(0, 0);
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(135deg) translate(0, -50px);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(135deg) translate(0, -100px);
+        opacity: 0;
+    }
+
+}
+
+.burst .line:nth-child(5){
+    animation: move05 15s linear infinite;
+    }
+
+@keyframes move05 {
+    0%{
+        transform:  rotate(180deg) translate(0, 0);
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(180deg) translate(0, -50px);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(180deg) translate(0, -100px);
+        opacity: 0;
+    }
+
+}
+
+.burst .line:nth-child(6){
+    animation: move06 15s linear infinite;
+    }
+
+@keyframes move06 {
+    0%{
+        transform:  rotate(225deg) translate(0, 0);
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(225deg) translate(0, -50px);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(225deg) translate(0, -100px);
+        opacity: 0;
+    }
+
+}
+
+.burst .line:nth-child(7){
+    animation: move07 15s linear infinite;
+    }
+
+@keyframes move07 {
+    0%{
+        transform:  rotate(270deg) translate(0, 0);
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(270deg) translate(0, -50px);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(270deg) translate(0, -100px);
+        opacity: 0;
+    }
+
+}
+.burst .line:nth-child(8){
+    animation: move07 15s linear infinite;
+    }
+
+@keyframes move08 {
+    0%{
+        transform:  rotate(315deg) translate(0, 0);
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(315deg) translate(0, -50px);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translate(0, -100px);
+        opacity: 0;
+    }
+
+}
+
+
+*/
+@keyframes monAnim {
+  0% {
+    transform: translateY(50vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=portfolio.css.map */
