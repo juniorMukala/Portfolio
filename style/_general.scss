@@ -1,7 +1,15 @@
 *{
     padding: 0;
-    margin: 0;
-}
+    margin: 0; 
+ }
+body {
+    background-image: url(../fichiers/luca-bravo-9l_326FISzk-unsplash.jpg);
+    background-attachment: fixed;
+    
+  }
+
+// HEADER
+
 .header{
 
     padding: 0px;
@@ -13,14 +21,17 @@
     position: fixed;
     z-index: 10;
     &.header--primary{
-        background: #001529;
+        background: black
     }
     .headerLogo{
         font-size: 35px;
         color: $text-color;
         padding-left: 2%;
         font-family: $font-stack; 
-        font-weight: 700; 
+        font-weight: 700;
+        .logoStyled{
+            color: yellow;
+        } 
     }
     .nav{
      padding-right: 2%;
@@ -41,21 +52,20 @@
         } 
     }       
 } 
+
+// PREMIERE SECTION : `About Me`
+
 .apercuProjet{
    @include sectionProperties;
-   width: 100%;
-    &.apercuProjet--mint{
-    background: $primary-color;
     .identite{
         display: flex;
         flex-direction: column;
         align-items: center;
-       
-       
+        width: 50%;
         .identite__nom {
             &.identite__nom--style{
                 color:$text-color;
-                font-size: 1.5rem;
+                font-size: 2rem;
                 font-family:$font-stack;
                 span{
                     color: yellow;
@@ -65,7 +75,7 @@
           .identite__messageAccueil{
               &.identite__messageAccueil--style{
                 color:$text-color;
-                font-size: 1.5rem;
+                font-size: 2rem;
                 font-family:$font-stack;
                 animation: blink 0.5s step-end infinite;
                 border-right: 0.15em solid yellow;
@@ -76,32 +86,30 @@
                button{
                    padding: 15px;
                    border-radius: 8px;
-                   font-size: 16px;
-                   background-color: yellow;
+                   font-size: 20px;
+                   background-color:transparent;
+                   color: yellow;
                    &:hover{
                        border: none;
-                       background-color: pink;
+                       background-color:#000;
+                       color: #fff;
+                       border: 2px white solid;
                     }
                 }
             }
         }
-       .photoProfil{
-           height: 100vh;
-           width: 35%;
+        .photoDeProfil{
+            width: 25%;
             img{
-            width: 100%;
-            height: 100%;    
-            object-fit: cover;
-            margin-top: 50px
+              width: 100%;
             }
         }
     }
-}
+
+// SECONDE SECTION : `Mes Projets`
+
 .card{
     @include sectionProperties;
-    &.card--style{
-        background:#002548;
-    }
     h2 {
      @include titleProperties;  
     }
@@ -127,11 +135,18 @@
             }  
             }           
             .cardProjet{
-                height: 30vh;
+                height: 365px;
                 width: 22%;
                 &.cardProjet--style{
                     background:$text-color;
-                    border-radius: 5px ;    
+                    border-radius: 5px ;
+                        cursor: pointer;
+                        transition: all 0.4s;
+                        &:hover{
+                          transform: scale(1.05);
+                          transition: all 0.4s;
+                        
+                      }   
                     img{
                         padding-top: 5px;
                         width: 18%;
@@ -141,7 +156,7 @@
                     .cardTitle{
                         color: $primary-color ;
                         font-family: $font-stack;
-                        font-weight: 00;  
+                        font-weight: 400;  
                         text-align: left;
                         margin: 10px;
                       }
@@ -159,25 +174,33 @@
             .lien{
                 a{
                   img{
-                    width: 4%;
-                    height: 4%;
+                    width: 2%;
+                    height: 2%;
                     }
                 }
             }
         }
     } 
 }
+
+//TROISIEME SECTION : `Compétences`
+
 .card{ 
     h2 {
         @include titleProperties;  
        }         
     .cardSkill{
-        height: 250px;
-        width: 25%;
-        &.cardSkill--style{
+        height: 365px;
+        width: 22%;
+       &.cardSkill--style{
             background: #001529;
             border-radius: 5px;
-                         
+            cursor: pointer;
+            transition: all 0.4s;
+            &:hover{
+              transform: scale(1.05);
+              transition: all 0.4s;
+            } 
             .cardTitle{
                 color: yellow;
                 font-family: $font-stack;
@@ -191,19 +214,19 @@
                 font-family: $font-stack;
                 font-weight: 400;
                 text-align: left;
-                margin: 10px;
+                margin: 30px;
                 padding-right: 5px;
             }
         }
     }
 }
 
+// QUATRIEME SECTION : `Me Contacter`
 
 .Profil{
     width: 100%;
     height: 100vh;
-    background-color:#002548;
-    
+    background-color: black;
     h2{
         @include titleProperties;
         transform: translateY(80%); 
@@ -214,39 +237,36 @@
         transform: translateY(20%); 
         .photoDeProfil{
             width: 25%;
-           /*  height: 100vh; */
             img{
                 width: 100%;
-               /*  height: 100%; */
             }
         }
    .cardContenairProfil{    
     &.cardContenairProfil--style{
-        background-color: white;
         width: 30%;
+        transform: translateY(80px);
     .cardProfil{
         border-radius: 20px; 
         &.cardProfil--style{
-            background-color: #001529;
             display: flex;
             text-align: justify;
             align-items: center;
             margin: 10px;
-
         p{
             color: white;
             font-family: $font-stack;
             font-size: 18px;
             font-weight: 300;
             margin: 15px;
-         }
+           }
         }
     }
-}}
-        .mesDifferentsContacts{ 
-                    width: 2%;
-                    height: 2%;
-        }
-    
-    }
+}
+}
+.mesDifferentsContacts{ 
+    width: 2%;
+    height: 2%;
+    transform: translateY(100px);
+     }
+   }
 }
