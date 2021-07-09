@@ -63,10 +63,12 @@ function request(){
         const image = document.getElementById('image')
         maPresentation.innerHTML =` <span>${data.nom}</span>` 
         image.src = data.image
+        image.src = data.appelerImage
+        const image2 = document.getElementById('image2')
+        image2.src = data.image
+        image2.src = data.appelerImage
     })
 } 
-
-
 request()
 
 
