@@ -1,169 +1,468 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjetPortfolio</title>
-    <link rel="stylesheet" href="style/final.css">
-    <script src="portfolio.js"></script>  
-    <script src="test.js"></script> 
-</head>
-<body>
-    <header class="header header--primary">
-        <p class="headerLogo">J<span class="logoStyled">M</span>U<span class="logoStyled">K</span></p>   
-        <nav class="nav">
-            <ul>
-                <li class="nav__link nav__link--active"><a href="index.html">About Me</a></li>
-                <li class="nav__link nav__link--active" ><a href="Pages/portfolio2.html">Projects</a></li>
-                <li class="nav__link nav__link--active" ><a href="Pages/portfolio3.html">Skills</a></li>
-                <li class="nav__link nav__link--active"><a href="Pages/portfolio4.html">Contacts</a></li>    
-            </ul>
-        </nav>
-    </header>
-    <section id= "section1" class="apercuProjet apercuProjet--mint">
-        <div class="identite">
-            <p  class="identite__nom  identite__nom--style" >Je suis <span><span id="identite__nom">.....</span></span> residant à Kinshasa en République Democratique du Congo </p>
-            <p class = "identite__messageAccueil identite__messageAccueil--style">Bienvenu sur mon portfolio, vous êtes réellement au bon endroit.</p>
-            <div class="monProfil">
-             <a href="#"><button>Mon profil complet</button> </a> 
-            </div> 
-        </div>
-        <div class="photoDeProfil">
-            <img src="" id="image" alt="maPhoto">
-        </div>      
-    </section>
-    <section id= "section2" class="section2">  
-        <div class="card card--style">
-            <div id = "cardContenair" class="cardContenair">
-                <h2> Mes Projects </h2>
-                <div class="childreenCard childreenCard--style">
-                    <div class="cardProjet cardProjet--style"><img src="fichiers/html.png" alt="logohtml">
-                        <p class="cardTitle">Premier  :</p>
-                        <p>Structurer une page html</p>
-                        <div class="lien">
-                            <a href="https://github.com/juniorMukala/tp_structure_html"><img class = "lienVersChaqueProjet" src="fichiers/github.svg"></a>
-                        </div>  
-                    </div>
-                    <div class="cardProjet cardProjet--style"><img src="fichiers/html.png" alt="logohtml"><img class = "lienVersChaqueProjet" src="fichiers/CSS3.png" alt="logocss">
-                        <p class="cardTitle">Second  :</p>
-                        <p>Styliser une page html</p>
-                        <div class="lien">
-                            <a href="https://github.com/juniorMukala/Projet_html_kda_2021"><img class = "lienVersChaqueProjet" src="fichiers/github.svg"></a>
-                        </div>       
-                    </div>
-                    <div class="cardProjet cardProjet--style">
-                        <img src="fichiers/html.png" alt="logohtml">
-                        <img class = "lienVersChaqueProjet" src="fichiers/CSS3.png" alt="logocss">
-                        <p class= "cardTitle"> fin prairie:</p>
-                        <p>Réproduction du site de la KD</p>
-                        <div class="lien">
-                            <a href="#"><img class = "lienVersChaqueProjet" src="fichiers/github.svg"></a>
-                        </div>  
-                    </div>   
-                </div>
-                <div class="childreenCard childreenCard--style">
-                    <div class="cardProjet cardProjet--style">
-                        <img src="fichiers/UX.png" alt="logoUX">
-                        <p class="cardTitle">Quatrieme  : </p>
-                        <p>Audit UX, UI du site de la KD</p>
-                        <div class="lien">
-                            <a href="#"><img class = "lienVersChaqueProjet" src="fichiers/github.svg"></a>  
-                        </div>  
-                    </div>  
-                    <div class="cardProjet cardProjet--style">
-                        <img src="fichiers/js-logo.png" alt="logojs">
-                        <p class="cardTitle">Cinquième : </p>
-                        <p>Formulaire à contenu dynamique</p>
-                        <div class="lien">
-                            <a href="#"><img class = "lienVersChaqueProjet" src="fichiers/github.svg"></a>
-                        </div>  
-                    </div>
-                    <div class="cardProjet cardProjet--style">
-                        <img src="fichiers/js-logo.png" alt="logojs">
-                        <img src="fichiers/sass.png" alt="logoSass">
-                        <p class="cardTitle">Sixième  : </p>
-                        <p>Réalisation d'un site Portfoliot</p>
-                        <div class="lien">
-                            <a href="#"><img class = "lienVersChaqueProjet" src="fichiers/github.svg"></a> 
-                        </div>  
-                    </div>                               
-                </div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="description"
+         content="A clean, beautiful and responsive portfolio template for Developers! using only Html, CSS, and JavaScript">
+      <meta name="author" content="Puskar Adhikari">
+      <title>Junior Mukala | Full-stack Developer</title>
+      <link href="./css/header.css" rel="stylesheet" />
+      <link href="./css/main.css" rel="stylesheet" />
+      <link href="./css/home.css" rel="stylesheet" />
+      <link href="./css/about.css" rel="stylesheet" />
+      <link href="./css/service.css" rel="stylesheet" />
+      <link href="./css/portfolio.css" rel="stylesheet" />
+      <link href="./css/testimonials.css" rel="stylesheet" />
+      <link href="./css/testimonials.css" rel="stylesheet" />
+      <link href="./css/competence.css" rel="stylesheet" />
+      <link href="./css/contact.css" rel="stylesheet" />
+      <link href="./css/footer.css" rel="stylesheet" />
+   </head>
+   <body id="page-top">
+      <header>
+         <div class="container">
+            <div class="row">
+               <div class="brand-name">
+                  <a href="/" class="logo">Junior</a>
+               </div>
+               <div class="hamburger">
+                  <i class="fa fa-bars"></i>
+               </div>
+               <div class="navbar">
+                  <ul>
+                     <li><a href="#home" class="active">Accueil</a></li>
+                     <li><a href="#about">A propos</a></li>
+                     <li><a href="#services">Services</a></li>
+                     <li><a href="#portfolio">Projets</a></li>
+                     <li><a href="#competence">Compétences</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                  </ul>
+               </div>
             </div>
-        </div>   
-    </section>  
-    <section  class="hardSoftSkills" >   
-        <div class="card card--style">
-            <div id = "cardContenair" class="cardContenair">
-                <h2>Compétences</h2>
-                <div class="childreenCard childreenCard--style">
-                    <div class="cardSkill cardSkill--style">
-                        <p class="cardTitle">html5, css3, semantic UI</p>
-                        <p>Ecrire du code propre, lisible, facilement maintenable à long terme et respectant differentes normes et les bonnes pratiques.</p>
-                        <p>Styliser les contenus des pages, créer des animations et un design favorables à une bonne expérience utilisateur</p>
-                    </div>
-                    <div class="cardSkill cardSkill--style">
-                        <p class= "cardTitle">javaScript</p>
-                        <p>Créer des interfaces utilisateurs dynamiques</p>
-                        <p>Exploiter la documentation d'une API</p>
-                        <p>Communiquer avec un seveur distant</p>      
-                    </div>
-                    <div class="cardSkill cardSkill--style">
-                        <p class="cardTitle">React js</p>
-                        <p>Développer des interfaces utilisateurs dynamiques et ses differentes fonctionnalités front-end avec react</p>
-                        <p>Créer des singles pages grace à react js</p>  
-                    </div>   
-                </div>
-                <div class="childreenCard childreenCard--style">
-                    <div class="cardSkill cardSkill--style">
-                        <p class="cardTitle">UX - UI</p> 
-                        <p>Etudier les différents besoins des utilisateurs et proposer des solutions numériques necéssaires</p>
-                        <p>Maqueter d'une interface</p>
-                        <p>Suivre les differentes étapes de la recherche avant l'ecriture du code.</p>
-                    </div>  
-                    <div class="cardSkill cardSkill--style">
-                        <p class="cardTitle">Nodejs, Express, mysql</p>
-                        <p>Développer les differentes fonctionnalités back-end</p>
-                        <p>Créer une API</p>
-                        <p>Capable d'apprendre des nouvelles technologies et s'adapter aux changements fulgurants</p> 
-                    </div>
-                    <div class="cardSkill cardSkill--style">
-                        <p class="cardTitle">softSkills</p>
-                        <p>Hormis les compétences techniques, je suis à même d'integrer aisement une équipe travailleuse, communiquer, prendre des décisions. </p> 
-                        <p>Travailler en remote</p>
-                    </div>                               
-                </div>
+         </div>
+      </header>
+      <section class="home" id="home">
+         <div class="container">
+            <div class="row full-screen">
+               <div class="home-content">
+                  <div class="block">
+                     <h6>Salut, je suis</h6>
+                     <h1>Junior Mukala</h1>
+                     <h3>Je développe des applications et sites web</h3>
+                     <div class="cv-btn">
+                        <a href="./img/portfolio/Junior Mukala dev.cv.pdf">Télecharger CV</a>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>       
-    </section>
-    <section id= "section4" class="Profil">
-        <h2>Me contacter</h2>
-        <div class="contenair">
-            <div class="photoDeProfil"><img src="" id="image2" alt="maPhoto"></div>
-            <div class="cardContenairProfil cardContenairProfil--style">      
-                <div class="cardProfil cardProfil--style">
-                    <p>Je suis Joseph-Junior Mukala, developpeur-apprenant à la Kinshasa Digital Académy.</p>
-                </div> 
-                <div class="cardProfil cardProfil--style">
-                    <p>Titre de graduat en Pédagogie et Techniques Appliquées option Electronique</p>
-                </div>
-                <div class="cardProfil cardProfil--style">
-                    <p>Vraiment ambitieux, je fais mes premiers en developpement web et web-mobile</p>
-                </div> 
-                <div class="cardProfil cardProfil--style">
-                    <p>Capable de travailler dans un environnement technologique fulgurant avec une adaptation facile aux mutations</p>
-                </div> 
-                <div class="cardProfil cardProfil--style">
-                    <p>Je parle: Francais, Tshiluba et lingala</p>
-                </div> 
-            </div> 
-            <div class="mesDifferentsContacts">
-                <a href="#"><img src="fichiers/facebook.svg" alt="contactez-moi à cette adresse facebook"></a>
-                <a href="https://mail.google.com/mail/u/0/#inbox"><img src="fichiers/envelope.svg" alt="contactez-moi à cette adresse e-mail"></a>
-                <a href="#"><img src="fichiers/linkedin.svg" alt="contactez-moi à cette adresse linkedin"></a>
-                <a href="#"><img src="fichiers/twitter-square.svg" alt="contactez-moi à cette adresse twitter"></a>
-            </div>  
-        </div>
-    </section>
-    </body>  
+         </div>
+      </section>
+      <section class="about" id="about">
+         <div class="container">
+         <div class="row">
+            <div class="title">
+               <h1>A propos</h1>
+               <p>Savoir plus à propos de moi</p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="about-content">
+               <div class="row">
+                  <div class="img">
+                     <img src="img/me.png" alt='me' />
+                  </div>
+                  <div class="text">
+                     <h4>Je suis Junior Mukala</h4>
+                     <h6><span>Développeur Web Full-stack,</span> j'habite Gombe, Quartier Haut commandement, Avenue de la science à Kinshasa
+                     </h6>
+                     <p>Je suis passionné par la création et le développement de produits propres, uniques et élégants.
+                        J'écris du code propre, lisible, modulaire, maintenable et bien remanié. L'innovation, la résolution des problèmes tech, 
+                        culture du résultat et le travail bien fait sont mes priorités.
+                     </p>
+                     <div class="skills">
+                        <h6>Voici mes quelques piles techniques sur lesquelles j'ai travaillé :</h6>
+                        <div class="skills-list">
+                        <ul  class="fa-ul">
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>HTML5</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS/SCSS</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>React JS</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Next.JS</li>
+                        </ul>
+                        <ul  class="fa-ul">
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>UI/UX Design</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS/Bootstrap</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Nodejs</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Expressjs</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Figma</li>
+                        </ul>
+                        </div>
+                     </div>
+                     <div class="social">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/juniorMukala"><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="services" id="services">
+         <div class="container">
+            <div class="row">
+               <div class="title text-center">
+                  <h1>Services</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="service-content">
+                  <div class="box">
+                     <div class="icon"><i class="fa fa-laptop"></i></div>
+                     <h5>Web Design</h5>
+                     <p>Bénéficier d'un design original et unique qui s'adapte à votre entreprise et à vos services.
+                     </p>
+                  </div>
+                  <div class="box">
+                     <div class="icon"><i class="fa fa-code"></i></div>
+                     <h5>Web Development</h5>
+                     <p>Je crée des sites web entièrement évolutifs et économiquement viables
+                        ainsi que des applications qui boostent votre activité.
+                     </p>
+                  </div>
+                  <div class="box">
+                     <div class="icon"><i class="fas fa-palette"></i></div>
+                     <h5>UI/UX Design</h5>
+                     <p>Une interface utilisateur/UX puissante est la clé d'un taux d'adoption plus élevé par les utilisateurs, et
+                        intégration plus facile. En reprenant les éléments suivants, je procède
+                        la recherche initiale et l'élaboration du design nécessaire.
+                     </p>
+                  </div>
+                  <div class="box">
+                     <div class="icon"><i class="fas fa-wallet"></i></div>
+                     <h5>Business Application</h5>
+                     <p>
+                        L'innovation et la résolution des problèmes sont également nes priorités. Je mets en place des applications modernes utilisant
+                        des technologies émergentes au bénéfice des entreprises.
+                     </p>
+                  </div>
+                  <div class="box">
+                     <div class="icon"><i class="fa fa-mobile"></i></div>
+                     <h5>Apps Interfac</h5>
+                     <p>Pour suivre le rythme, je fais de mon mieux pour concevoir un design accrocheur
+                        conceptions et interfaces utilisateur de premier plan.
+                     </p>
+                  </div>
+                  <div class="box">
+                     <div class="icon"><i class="fa fa-rocket"></i></div>
+                     <h5>SEO</h5>
+                     <p>Le référencement est un élément essentiel du marketing en ligne. j'utilise un
+                        combinaison des dernières stratégies sur site et hors site pour
+                        produire les meilleurs résultats.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+         <div class="container">
+            <div class="row">
+               <div class="title text-center">
+                  <h1>Mes projets</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="filter-btn">
+                  <ul id="filterBtn">
+                     <li class="active" data-target="all">All</li>
+                     <li data-target="web">Web Design</li>
+                     <li data-target="app">App Interface</li>
+                     <li data-target="ui">UI/UX</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="row">
+               <div class="gallery">
+                  <div class="item" data-id="web">
+                     <div class="inner">
+                        <img src="./img/portfolio/web.jpg" alt="portfolio"/>
+                        <div class="overlay">
+                          <div class="lien">
+                            <span class="fa fa-plus"></span>
+                            <span class="fa voir-plus">
+                              <a href="https://cinema-web-app-js.vercel.app/">Projet</a>
+                            </span>
+                            <span class="fa fa-code">
+                               <a href="https://github.com/juniorMukala"></a>
+                            </span>
+                          </div>
+                           <h4>Web Design</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-id="web">
+                     <div class="inner">
+                        <img src="./img/portfolio/web2.png" alt="portfolio"/>
+                        <div class="overlay">
+                           <span class="fa fa-plus"></span>
+                           <h4>Web Design</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-id="app">
+                     <div class="inner">
+                        <img src="./img/portfolio/app.png" alt="portfolio"/>
+                        <div class="overlay">
+                           <div class="lien">
+                              <span class="fa fa-plus"></span>
+                              <span class="fa voir-plus">
+                                <a href="https://cinema-web-app-one.vercel.app/">Projet</a>
+                              </span>
+                           </div>
+                           <h4>App Interface</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-id="app">
+                     <div class="inner">
+                        <img src="./img/hero.png" alt="portfolio" height="275px"/>
+                        <div class="overlay">
+                           <div class="lien">
+                              <span class="fa fa-plus"></span>
+                              <span class="fa voir-plus">
+                                <a href="file:///home/user/Desktop/Codes/Folio/index.html">Projet</a>
+                              </span>
+                           </div>
+                           <h4>App Interface</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-id="ui">
+                     <div class="inner">
+                        <img src="./img/portfolio/ui2.png" alt="portfolio"/>
+                        <div class="overlay">
+                           <span class="fa fa-plus"></span>
+                           <h4>UI/UX Design</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item" data-id="ui">
+                     <div class="inner">
+                        <img src="./img/portfolio/form.jpg" alt="portfolio" height="275px"/>
+                        <div class="overlay">
+                          <div class="lien">
+                           <span class="fa fa-plus"></span>
+                           <span class="fa fa-code">
+                              <a href="https://github.com/juniorMukala/Formulaire"></a>
+                           </span>
+                          </div>
+                           <h4>UI/UX Design</h4>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="message">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="message-text">
+                  <h2>Ma boîte de réception est toujours ouverte. Que vous ayez une question ou que vous vouliez simplement dire bonjour ou que vous souhaitiez m'embaucher, je ferai de mon mieux pour vous répondre!</h2>
+               </div>
+               <div class="button ">
+                  <a href="index.html">Me contacter</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="testimonials">
+         <div class="container">
+            <div class="row">
+               <div class="title text-center">
+                  <h1>Testimonials</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="testimonials-content">
+                  <div class="testimonials-box">
+                     <div class="testimonials-img">
+                        <div class="test-img">
+                           <img src="./img/testimonials/1.jpeg" />
+                        </div>
+                        <div class="testimonials-text">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquam. Corrupti molestias quae culpa accusamus magni accusantium itaque dolore soluta.</p>
+                           <h6>Peniel Dialundama</h6>
+                           <p>Software Engineer</p>
+                        </div>
+                     </div>
+                     <div class="testimonials-img">
+                        <div class="test-img">
+                           <img src="./img/testimonials/2.jpg" />
+                        </div>
+                        <div class="testimonials-text">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquam. Corrupti molestias quae culpa accusamus magni accusantium itaque dolore soluta.</p>
+                           <h6>Jeereq Minganda</h6>
+                           <p>JavaScript Engineer</p>
+                        </div>
+                     </div>
+                     <div class="testimonials-img">
+                        <div class="test-img">
+                           <img src="./img/testimonials/Alberto.jpg" />
+                        </div>
+                        <div class="testimonials-text">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquam. Corrupti molestias quae culpa accusamus magni accusantium itaque dolore soluta.</p>
+                           <h6>Alberto Siadikonga</h6>
+                           <p>Designer</p>
+                        </div>
+                     </div>
+                     <div class="testimonials-img">
+                        <div class="test-img">
+                           <img src="./img/testimonials/rafiki.jpg" />
+                        </div>
+                        <div class="testimonials-text">
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquam. Corrupti molestias quae culpa accusamus magni accusantium itaque dolore soluta.</p>
+                           <h6>Richard Rafiki</h6>
+                           <p>WordPress Developer</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slider"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="competence" id="competence">
+         <div class="container">
+            <div class="row">
+               <div class="title text-center">
+                  <h1>Compétences</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="competence-content">
+                  <div class="competence-box">
+                     <div class="competence-img">
+                        <img src='./img/competence/1.jpg' />
+                     </div>
+                     <div class="competence-text">
+                        <div class="competence-info">
+                           <span>fevrier 2021</span>
+                           <span>Version Control</span>
+                        </div>
+                        <h3>Maitrise des outils dev.</h3>
+                        <p>Outils de versioning : git et github, Srum méthodologie de gestion de projets
+                           Bests practices tels que : code propres, nommage des varible,
+                           Asana, Assurance Qualité : tests des codes
+                        </p>
+                        <a href="./img/portfolio/Junior Mukala dev.cv.pdf">Read More</a>
+                     </div>
+                  </div>
+                  <div class="competence-box">
+                     <div class="competence-img">
+                        <img src='./img/competence/2.png' />
+                     </div>
+                     <div class="competence-text">
+                        <div class="competence-info">
+                           <span>Avril 2021</span>
+                           <span>Web Development Full-stack</span>
+                        </div>
+                        <h3>JavaScript full stack</h3>
+                        <p>Le coeur de ma compétence en developpement web c'est de créer des sites et applications web.
+                           Partant de la rechecrche utilisateur, maquettage, intégration, base des données, tests, deploiement.</p>
+                        <a href="./img/portfolio/Junior Mukala dev.cv.pdf">Read More</a>
+                     </div>
+                  </div>
+                  <div class="competence-box">
+                     <div class="competence-img">
+                        <img src='./img/competence/3.jpg' />
+                     </div>
+                     <div class="competence-text">
+                        <div class="competence-info">
+                           <span>Juillet 2021</span>
+                           <span>Hardskills</span>
+                        </div>
+                        <h3>Aptitudes Professionnelles</h3>
+                        <p>En plus de mon bac+2 simplon, je suis un passionné du travail bien fait. Savoir communniquer, travailler en équipe, la pédagogie sont mes atouts</p>
+                        <a href="./img/portfolio/Junior Mukala dev.cv.pdf">Read More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="contact" id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="title text-center">
+                  <h1>Me contacter</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="contact-form">
+                  <div class="row">
+                     <div class="contact-text">
+                        <h2>Envoyez-moi un message</h2>
+                        <p>Ma boîte de réception est toujours ouverte, je ferai de mon mieux pour vous répondre!</p>
+                     </div>
+                  </div>
+                  <div class="row space-between">
+                     <div class="col-6">
+                        <input type="text" class="form-control" name="" placeholder="Name" />
+                     </div>
+                     <div class="col-6">
+                        <input type="text" class="form-control" name="" placeholder="Email" />
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-12">
+                        <textarea class="form-control" placeholder="Your Message"></textarea>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="button btn">
+                        <a href="#">Me contacter</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="footer-logo">Junior</div>
+               <div class="social-link">
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href="https://github.com/juniorMukala"><i class="fa fa-github"></i></a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <section class="copyright">
+         <div class="container">
+            <p>© <span id="year"></span> | Designed and Developed By Junior Mukala. | All rights reserved.</p>
+         </div>
+        
+      </section>
+      
+      <div class="lightbox hide">
+         <span class="close-lightbox fa fa-close"></span>
+         <img src="" alt="portfolio"/>
+      </div>
+      <a href="#page-top" class="scroll-to-top rounded js-scroll-trigger">
+         <i class="fa fa-angle-up"></i>
+     </a>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./js/app.js"></script>
+   </body>
 </html>
+
