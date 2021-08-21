@@ -59,6 +59,7 @@
 .item img {
     width: 100%;
     display: block;
+    object-fit: cover;
 }
 
 .item .overlay {
@@ -125,6 +126,10 @@
    font-family:'Lobster', cursive;
    color: #fff;
 }
+.overlay .code a{
+    font-family:'Lobster', cursive;
+    color: #fff;
+ }
 
 .item:hover .overlay h4 {
     animation: galleryText 0.8s ease;
